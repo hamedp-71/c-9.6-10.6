@@ -1,0 +1,253 @@
+mixed-port: 7890
+ipv6: true
+allow-lan: true
+mode: rule
+log-level: warning
+disable-keep-alive: false
+keep-alive-idle: 30
+keep-alive-interval: 30
+unified-delay: false
+geo-auto-update: true
+geo-update-interval: 168
+external-controller: '127.0.0.1:9090'
+external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
+external-ui: ui
+external-controller-cors:
+  allow-origins: ['*']
+  allow-private-network: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+hosts: {}
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  respect-rules: true
+  use-hosts: true
+  use-system-hosts: false
+  nameserver:
+    - '8.8.8.8'
+    - '2001:4860:4860::8888'
+    - '8.8.4.4'
+    - '2001:4860:4860::8844'
+    - '1.1.1.1'
+    - '2606:4700:4700::1111'
+    - '9.9.9.9'
+    - '2620:fe::fe'
+  proxy-server-nameserver:
+    - '8.8.8.8'
+    - '2001:4860:4860::8888'
+    - '8.8.4.4'
+    - '2001:4860:4860::8844'
+    - '1.1.1.1'
+    - '2606:4700:4700::1111'
+    - '9.9.9.9'
+    - '2620:fe::fe'
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  strict-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 'any:53'
+  mtu: 1280
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080, 8880, 2052, 2082, 2086, 2095]
+    TLS:
+      ports: [443, 8443, 2053, 2083, 2087, 2096]
+
+proxies:
+  - name: "hamedvpns-13-ipv4"
+    type: vless
+    server: homestead-walloping.sports-streams.org
+    port: 443
+    uuid: 24c51cc2-7613-4f48-a961-0ec39a6132c0
+    udp: true
+    tls: true
+    network: xhttp
+    servername: rss.worldoftanks.asia
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: rss.worldoftanks.asia
+      mode: auto
+
+  - name: "hamedvpns-14-ipv4"
+    type: vless
+    server: coughed-gongs.freevideochats.org
+    port: 443
+    uuid: 24c51cc2-7613-4f48-a961-0ec39a6132c0
+    udp: true
+    tls: true
+    network: xhttp
+    servername: game.worldoftanks.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: game.worldoftanks.com
+      mode: auto
+
+  - name: "hamedvpns-15-ipv4"
+    type: vless
+    server: 87.120.106.95
+    port: 443
+    uuid: 24c51cc2-7613-4f48-a961-0ec39a6132c0
+    udp: true
+    tls: true
+    network: xhttp
+    servername: rss.worldoftanks.asia
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: rss.worldoftanks.asia
+      mode: auto
+
+  - name: "hamedvpns-16-ipv4"
+    type: vless
+    server: 162.216.231.214
+    port: 443
+    uuid: 24c51cc2-7613-4f48-a961-0ec39a6132c0
+    udp: true
+    tls: true
+    network: xhttp
+    servername: game.worldoftanks.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: game.worldoftanks.com
+      mode: auto
+
+  - name: "hamedvpns-7-ipv6"
+    type: vless
+    server: "2a03:90c0:162:1::360"
+    port: 443
+    uuid: 24c51cc2-7613-4f48-a961-0ec39a6132c0
+    udp: true
+    tls: true
+    network: xhttp
+    servername: rss.worldoftanks.asia
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: rss.worldoftanks.asia
+      mode: auto
+
+  - name: "hamedvpns-8-ipv6"
+    type: vless
+    server: "2a03:90c0:32:1::541"
+    port: 443
+    uuid: 24c51cc2-7613-4f48-a961-0ec39a6132c0
+    udp: true
+    tls: true
+    network: xhttp
+    servername: game.worldoftanks.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: game.worldoftanks.com
+      mode: auto
+
+proxy-groups:
+  - name: "🌐 گلوبال"
+    type: select
+    proxies:
+      - "🚀 انتخاب خودکار (بهترین)"
+      - "hamedvpns-13-ipv4"
+      - "hamedvpns-14-ipv4"
+      - "hamedvpns-15-ipv4"
+      - "hamedvpns-16-ipv4"
+      - "hamedvpns-7-ipv6"
+      - "hamedvpns-8-ipv6"
+
+  - name: "🚀 انتخاب خودکار (بهترین)"
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 60
+    tolerance: 50
+    proxies:
+      - "hamedvpns-13-ipv4"
+      - "hamedvpns-14-ipv4"
+      - "hamedvpns-15-ipv4"
+      - "hamedvpns-16-ipv4"
+      - "hamedvpns-7-ipv6"
+      - "hamedvpns-8-ipv6"
+
+rule-providers:
+  ir:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
+    path: "./ruleset/ir.txt"
+    interval: 86400
+  ir-cidr:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt"
+    path: "./ruleset/ir-cidr.txt"
+    interval: 86400
+  malware:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt"
+    path: "./ruleset/malware.txt"
+    interval: 86400
+  phishing:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt"
+    path: "./ruleset/phishing.txt"
+    interval: 86400
+  cryptominers:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt"
+    path: "./ruleset/cryptominers.txt"
+    interval: 86400
+  ads:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ads.txt"
+    path: "./ruleset/ads.txt"
+    interval: 86400
+
+rules:
+  - RULE-SET,ir,DIRECT
+  - RULE-SET,ir-cidr,DIRECT
+  - RULE-SET,malware,REJECT
+  - RULE-SET,phishing,REJECT
+  - RULE-SET,cryptominers,REJECT
+  - RULE-SET,ads,REJECT
+  - MATCH,🌐 گلوبال
+
+ntp:
+  enable: true
+  server: "time.apple.com"
+  port: 123
+  interval: 30
