@@ -168,6 +168,108 @@ proxies:
       host: game.worldoftanks.com
       mode: auto
 
+  - name: "hamedvpns-17-ipv4"
+    type: vless
+    server: homestead-walloping.sports-streams.org
+    port: 443
+    uuid: da3ecad9-6d28-497c-8949-15556e028ca4
+    udp: true
+    tls: true
+    network: xhttp
+    servername: worldoftanks.asia
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: worldoftanks.asia
+      mode: auto
+
+  - name: "hamedvpns-18-ipv4"
+    type: vless
+    server: coughed-gongs.freevideochats.org
+    port: 443
+    uuid: da3ecad9-6d28-497c-8949-15556e028ca4
+    udp: true
+    tls: true
+    network: xhttp
+    servername: challenge.worldoftanks.eu
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: challenge.worldoftanks.eu
+      mode: auto
+
+  - name: "hamedvpns-19-ipv4"
+    type: vless
+    server: 87.120.106.95
+    port: 443
+    uuid: da3ecad9-6d28-497c-8949-15556e028ca4
+    udp: true
+    tls: true
+    network: xhttp
+    servername: worldoftanks.asia
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: worldoftanks.asia
+      mode: auto
+
+  - name: "hamedvpns-20-ipv4"
+    type: vless
+    server: 162.216.231.214
+    port: 443
+    uuid: da3ecad9-6d28-497c-8949-15556e028ca4
+    udp: true
+    tls: true
+    network: xhttp
+    servername: challenge.worldoftanks.eu
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: challenge.worldoftanks.eu
+      mode: auto
+
+  - name: "hamedvpns-9-ipv6"
+    type: vless
+    server: "2a03:90c0:162:1::360"
+    port: 443
+    uuid: da3ecad9-6d28-497c-8949-15556e028ca4
+    udp: true
+    tls: true
+    network: xhttp
+    servername: worldoftanks.asia
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: worldoftanks.asia
+      mode: auto
+
+  - name: "hamedvpns-10-ipv6"
+    type: vless
+    server: "2a03:90c0:32:1::541"
+    port: 443
+    uuid: da3ecad9-6d28-497c-8949-15556e028ca4
+    udp: true
+    tls: true
+    network: xhttp
+    servername: challenge.worldoftanks.eu
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
+    xhttp-opts:
+      path: "/"
+      host: challenge.worldoftanks.eu
+      mode: auto
+
 proxy-groups:
   - name: "🌐 گلوبال"
     type: select
@@ -179,6 +281,12 @@ proxy-groups:
       - "hamedvpns-16-ipv4"
       - "hamedvpns-7-ipv6"
       - "hamedvpns-8-ipv6"
+      - "hamedvpns-17-ipv4"
+      - "hamedvpns-18-ipv4"
+      - "hamedvpns-19-ipv4"
+      - "hamedvpns-20-ipv4"
+      - "hamedvpns-9-ipv6"
+      - "hamedvpns-10-ipv6"
 
   - name: "🚀 انتخاب خودکار (بهترین)"
     type: url-test
@@ -192,6 +300,12 @@ proxy-groups:
       - "hamedvpns-16-ipv4"
       - "hamedvpns-7-ipv6"
       - "hamedvpns-8-ipv6"
+      - "hamedvpns-17-ipv4"
+      - "hamedvpns-18-ipv4"
+      - "hamedvpns-19-ipv4"
+      - "hamedvpns-20-ipv4"
+      - "hamedvpns-9-ipv6"
+      - "hamedvpns-10-ipv6"
 
 rule-providers:
   ir:
