@@ -409,20 +409,14 @@ proxy-groups:
       - "hamedvpns-14-ipv4"
       - "hamedvpns-15-ipv4"
       - "hamedvpns-16-ipv4"
-      - "hamedvpns-7-ipv6"
-      - "hamedvpns-8-ipv6"
       - "hamedvpns-17-ipv4"
       - "hamedvpns-18-ipv4"
       - "hamedvpns-19-ipv4"
       - "hamedvpns-20-ipv4"
-      - "hamedvpns-9-ipv6"
-      - "hamedvpns-10-ipv6"
       - "hamedvpns-21-ipv4"
       - "hamedvpns-22-ipv4"
       - "hamedvpns-23-ipv4"
       - "hamedvpns-24-ipv4"
-      - "hamedvpns-11-ipv6"
-      - "hamedvpns-12-ipv6"
 
 rule-providers:
   ir:
